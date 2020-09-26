@@ -25,7 +25,7 @@ exports.handler = (event, context, callback) => {
 
     callback(null, {
         statusCode: 200,
-        body: JSON.stringify({ user: token, error: errors })
+        body: JSON.stringify({ user: auth.uid, error: errors })
     });
 
 }
